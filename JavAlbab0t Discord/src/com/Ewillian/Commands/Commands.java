@@ -43,9 +43,9 @@ public class Commands extends ListenerAdapter {
             	
             	EmbedBuilder info = new EmbedBuilder();
             	info.setTitle("✨InesB0t✨");
-            	info.setDescription("Bonjour, je suis l'interface numérique d'échange sociaux ou Ines.");
+            	info.setDescription("Bonjour, je suis l'interface numérique d'échange sociaux ou Ines. \n Pour plus d'information sur mes programmes tapez`<!help`.");
             	info.setColor(0x42ebf4);
-            	info.setImage(event.getGuild());
+            	info.setImage("https://github.com/Ewillian/JavAlbaBot-Discord/blob/master/Image/BotIcon.png?raw=true");
             	info.setFooter("Created by Ewillian", event.getGuild().getOwner().getUser().getAvatarUrl());
             	channel.sendMessage(info.build()).queue();
             }
