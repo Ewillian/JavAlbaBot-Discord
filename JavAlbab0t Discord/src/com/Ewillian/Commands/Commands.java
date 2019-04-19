@@ -32,8 +32,10 @@ public class Commands extends ListenerAdapter {
             }else if (msg.equalsIgnoreCase("<!help"))
             {
         		String aswer = "Liste des commandes : \n ";
-                myCommands.add("<!help - List commands list");
-                myCommands.add("<!ping - Answer pong!");
+                myCommands.add("<!help - Informe des mes fonctions.");
+                myCommands.add("<!ping - Répond pong!");
+                myCommands.add("<!info - Parle de moi.");
+                myCommands.add("<!clear - Suprimme entre 1 et 100 messages.");
                 for (String com : myCommands) {
                 	aswer += "`"+com+"` \n";
 				}

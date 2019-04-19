@@ -1,7 +1,9 @@
 package com.Ewillian.BotMain;
 import javax.security.auth.login.LoginException;
 
+import com.Ewillian.Commands.Clear;
 import com.Ewillian.Commands.Commands;
+import com.Ewillian.Events.GuildMemberJoin;
 
 import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
@@ -21,6 +23,8 @@ public class MainBot {
 		jda.getPresence().setActivity(Activity.playing("Warframe"));
 		
 		jda.addEventListener(new Commands());
+		jda.addEventListener(new GuildMemberJoin());
+		jda.addEventListener(new Clear());
 	}
 
 }
