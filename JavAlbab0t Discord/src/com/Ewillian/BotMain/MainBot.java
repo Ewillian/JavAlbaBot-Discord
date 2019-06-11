@@ -18,7 +18,7 @@ public class MainBot {
 	public static void main(String[] args) throws LoginException, InterruptedException {
 		System.out.println("Alive");
 		JDA jda = new JDABuilder(AccountType.BOT)
-				.setToken("").build();
+				.setToken("NTYzMzQyNjYwNjIzMTM4ODE2.XKYEyw.wtnU687cU83uh4j6UPsFvz7L7xI").build();
 		jda.getPresence().setStatus(OnlineStatus.ONLINE);
 		jda.getPresence().setActivity(Activity.playing("Warframe"));
 		
